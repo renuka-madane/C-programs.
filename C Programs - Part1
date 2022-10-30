@@ -1,0 +1,30 @@
+Q - //Program to display if given age comes under which age bucket.
+//Ex : 60+ - Senior Citizen , 1-5 Toddler, 6-12 - Tween, 13-19, teenage, 20-60 - Adult
+#include <stdio.h>
+
+int main()
+{
+    int age;
+    printf("Enter the age of the person :");
+    scanf("%d",&age);
+    if (age > 60)
+     printf("The person is senior citizen.");
+    else if (age>=1 && age<=5)
+     printf("The person is toddler.");
+    else if (age>=6 && age<=12)
+     printf("The person is tween.");
+    else if (age>=13 && age<=19)
+     printf("The person is teenage.");
+    else if (age>=20 && age<=60)
+     printf("The person is adult.");
+
+    return 0;
+}
+
+******Output *****
+Enter the age of the person :58
+The person is adult.
+
+
+==========
+
