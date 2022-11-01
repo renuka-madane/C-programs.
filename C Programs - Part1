@@ -88,19 +88,30 @@ int main()
 
 ...............................................
 
+Q 4 -Check if the number is divisible by 4
 
+Sol. -
+#include <stdio.h>
 
+int main()
+{
+    int n;
+    printf("Enter a positive no.");
+    scanf("%d", &n);
+    if (n%4 == 0)
+    {
+        printf( "The no. is divisible by 4");
+        
+    }
+    else 
+        printf( "The no. is not divisible by 4");
 
+    return 0;
+}
+ ******Output ***** 
+printf( "The no. is divisible by 4");
 
-
-
-
-
-
-
-
-
-
+.................................................
 
 Q 5 - //Program to display if given age comes under which age bucket.
 //Ex : 60+ - Senior Citizen , 1-5 Toddler, 6-12 - Tween, 13-19, teenage, 20-60 - Adult
