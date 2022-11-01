@@ -1,4 +1,108 @@
-Q - //Program to display if given age comes under which age bucket.
+Q 1- Check if given number is positive or negative
+Sol . - 
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter any number :");
+    scanf("%d",&num);
+    if (num>=0)
+    {
+        printf("%d is a positive number",num);
+    }
+    else
+    {
+        printf("%d is a negative number",num);
+    }
+
+    return 0;
+}
+******Output *****
+Enter any number :-2
+-2 is a negative number
+.............................................
+Q 2 -  Display the factors of a given number.
+
+Sol. - 
+#include <stdio.h>
+//Display the factors of a given number
+int main()
+{
+    int n,i;
+    printf("Enter a positive number ");
+    scanf("%d",&n);
+    printf("Factors of %d are :",n);
+    for (i=1;i<=n;i++)
+    {
+        if(n%i == 0)
+        {
+            printf("%d \n",i);
+            
+        }
+    }
+    return 0;
+}
+
+******Output *****
+Enter a positive number 60
+Factors of 60 are :1 
+2 
+3 
+4 
+5 
+6 
+10 
+12 
+15 
+20 
+30 
+60 
+
+........................................
+Q 3 - Number(user given numbers) is greater/lesser or equal to each other.
+Sol. -
+#include <stdio.h>
+
+int main()
+{
+    int n1 , n2;
+    printf("Enter any two numbers :");
+    scanf("%d%d",&n1,&n2);
+    if (n1>n2)
+    {
+        printf("%d is greater than %d",n1,n2);
+    }
+    else if(n1<n2)
+    {
+        printf("%d is a lesser than %d",n1,n2);
+    }
+    else
+    {
+        printf("%d is a equal to %d",n2,n1);
+    }
+    
+   ******Output ***** 
+    Enter any two numbers :-2 2
+-2 is a lesser than 2
+
+...............................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q 5 - //Program to display if given age comes under which age bucket.
 //Ex : 60+ - Senior Citizen , 1-5 Toddler, 6-12 - Tween, 13-19, teenage, 20-60 - Adult
 #include <stdio.h>
 
