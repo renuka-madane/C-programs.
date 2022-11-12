@@ -1,0 +1,6 @@
+Display random number from 2-100 and list the factors of the number.
+Random numbers just numbers that lie within a range and any of the numbers can occur. The rand() function in the C programming language is used to generate a random number.
+The return type is of rand() function is an integer.
+The rand() function generates random numbers that can be any integer value.
+But, to generate random numbers within a specific range, we have a formula that returns a random number between given ranges.   
+number = (rand() % (upper - lower + 1)) + lower
