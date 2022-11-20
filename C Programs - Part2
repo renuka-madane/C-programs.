@@ -205,3 +205,38 @@ Enter the no. of rows for the pyramid5
 *****
 
 =========
+Q5-- Program to print inverted right-angle triangle
+
+*****
+****
+***
+**
+*
+Solution=
+#include <stdio.h>
+
+int main()
+{
+    int i,j,rows;
+    printf("Enter the no. of rows for the pyramid");
+    scanf("%d",&rows);
+    for(i=rows;i>=1;i--)
+    {
+        for(j=i;j>=1;j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+        
+    }
+
+    return 0;
+}
+
+
+Output----
+Enter the no. of rows for the pyramid4
+****
+***
+**
+*
