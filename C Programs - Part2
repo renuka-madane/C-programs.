@@ -131,4 +131,77 @@ Enter any 2 nos. of your choice8 4
 8.0 / 4.0=2.0
 
 ============================
+Q3 - Program to print triangle pattern
 
+     *
+    ***
+   *****
+ ********
+ 
+ C Program --
+ #include <stdio.h>
+
+
+
+int main()
+{
+    int i,j,rows;
+    
+    
+    printf("Enter the no. of rows for the pyramid");
+    scanf("%d",&rows);
+    int space=(rows-1);
+    /*run loop (parent loop) till number of rows*/
+    for(i=0;i< rows;i++)
+    {
+	    /*loop for initially space, before star printing*/
+	    for(j=0;j<space;j++)
+	    {
+		    printf(" ");
+	    }
+	    for(j=0;j<=i;j++)
+	    {
+		    printf("* ");
+	    }
+		
+	    printf("\n");
+	    space--;	/* decrement one space after one row*/
+    }
+    .............
+    Q -Program to print triangle pattern
+
+*
+**
+***
+****
+*****
+C Program ---
+#include <stdio.h>
+
+int main()
+{
+    int i,j,rows;
+    printf("Enter the no. of rows for the pyramid");
+    scanf("%d",&rows);
+    
+    for(i=1;i<=rows;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        
+    }
+
+    return 0;
+}
+Output= 
+Enter the no. of rows for the pyramid5
+*
+**
+***
+****
+*****
+
+=========
